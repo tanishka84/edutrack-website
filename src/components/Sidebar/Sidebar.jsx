@@ -21,14 +21,12 @@ const Sidebar = ({ isOpen, setSidebarOpen }) => {
           <NavLink to="/dashboard/courses" className={styles.link} onClick={handleLinkClick}>
             Courses
           </NavLink>
-          {/* --- ADDED LINKS --- */}
           <NavLink to="/dashboard/assignments" className={styles.link} onClick={handleLinkClick}>
             Assignments
           </NavLink>
           <NavLink to="/dashboard/progress" className={styles.link} onClick={handleLinkClick}>
             Progress
           </NavLink>
-          {/* ----------------- */}
           <NavLink to="/dashboard/profile" className={styles.link} onClick={handleLinkClick}>
             Profile
           </NavLink>

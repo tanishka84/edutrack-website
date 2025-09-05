@@ -1,21 +1,20 @@
 // src/pages/CoursesPage.jsx
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../context/AuthContext'; // <-- 1. Import useAuth
+import { useAuth } from '../context/AuthContext'; 
 import styles from './CoursesPage.module.css';
 import { Plus, Edit, Trash2 } from 'react-feather';
 
-// ... (The CourseModal and CourseCard sub-components remain the same) ...
 // The Modal Form for Creating/Editing
 const CourseModal = ({ course, onSave, onClose }) => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    image: 'https://via.placeholder.com/400x225/6B7280/FFFFFF?text=New+Course',
+    image: '',
     progress: 0,
   });
 
   useEffect(() => {
-    // If we are editing a course, populate the form with its data
+
     if (course) {
       setFormData(course);
     }
@@ -101,15 +100,14 @@ const initialCoursesData = [
 ];
 
 const CoursesPage = () => {
-  const { user } = useAuth(); // <-- 2. Get the current user from context
+  const { user } = useAuth(); // <-- 1. Get the current user from context
   const [courses, setCourses] = useState(initialCoursesData);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingCourse, setEditingCourse] = useState(null);
 
-  // --- 3. Determine if the user has permission to manage courses ---
+  // --- 2. Determine if the user has permission to manage courses ---
   const canManageCourses = user && (user.role === 'Admin' || user.role === 'Instructor');
 
-  // ... (handler functions remain the same)
   const handleOpenCreateModal = () => {
     setEditingCourse(null);
     setIsModalOpen(true);
@@ -146,7 +144,7 @@ const CoursesPage = () => {
     <div className={styles.page}>
       <div className={styles.pageHeader}>
         <h1 className={styles.title}>My Courses</h1>
-        {/* --- 4. Conditionally render the create button --- */}
+        {/* --- 3. Conditionally render the create button --- */}
         {canManageCourses && (
           <button onClick={handleOpenCreateModal} className={`${styles.btn} ${styles.primaryBtn}`}>
             <Plus size={16} /> Create New Course

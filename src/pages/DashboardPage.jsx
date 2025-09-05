@@ -1,7 +1,7 @@
 // src/pages/DashboardPage.jsx
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // <-- Import useAuth
+import { useAuth } from '../context/AuthContext'; 
 import styles from './DashboardPage.module.css';
 
 // Helper to format the time since an activity happened
@@ -75,7 +75,7 @@ const DashboardPage = () => {
             <p>No recent activity.</p>
           )}
         </div>
-        {}
+        {/* --------------------------- */}
 
       </div>
     </div>

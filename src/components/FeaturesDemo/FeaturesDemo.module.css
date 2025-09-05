@@ -39,10 +39,10 @@
 
 .slide img {
   width: 100%;
-  display: block; /* Removes extra space below the image */
-  aspect-ratio: 16 / 9; /* Forces a consistent widescreen shape */
-  object-fit: cover; /* Ensures the image fills the space without distortion */
-  background-color: var(--color-border); /* Background for when image is loading */
+  display: block; 
+  aspect-ratio: 16 / 9; 
+  object-fit: cover; 
+  background-color: var(--color-border); 
 }
 
 .caption {

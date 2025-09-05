@@ -10,7 +10,7 @@
   color: white;
   padding: 0 1rem;
   background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.7)),
-    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80');
+    url('../../assets/herosection-img.jpg');
   background-size: cover;
   background-position: center;
 }

@@ -2,18 +2,21 @@
 import React, { useState, useEffect } from 'react';
 import styles from './FeaturesDemo.module.css';
 import { ChevronLeft, ChevronRight } from 'react-feather';
+import dashboardImg from '../../assets/intuitive-dashboard.png';
+import courseCreationImg from '../../assets/easy-course-creation.png';
+import analyticsImg from '../../assets/powerful-analytics.png';
 
 const slides = [
   {
-    image: 'https://via.placeholder.com/900x500/1E40AF/FFFFFF?text=Dashboard',
+    image: 'dashboardImg',
     caption: 'Intuitive Dashboard',
   },
   {
-    image: 'https://via.placeholder.com/900x500/14B8A6/FFFFFF?text=Course+Creation',
+    image: 'courseCreationImg',
     caption: 'Easy Course Creation',
   },
   {
-    image: 'https://via.placeholder.com/900x500/6B7280/FFFFFF?text=Analytics',
+    image: 'analyticsImg',
     caption: 'Powerful Analytics',
   },
 ];

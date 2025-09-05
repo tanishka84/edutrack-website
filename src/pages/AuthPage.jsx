@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link, useSearchParams } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import avatarImg from '../../assets/user-avatar.jpg';
 import styles from './AuthPage.module.css';
 
 // --- MOCK USERS WITH ROLES ---
@@ -10,21 +11,21 @@ const studentUser = {
   email: 'student@edutrack.com',
   role: 'Student',
   bio: 'Frontend developer from Bengaluru, passionate about React and modern web technologies.',
-  avatar: 'https://i.pravatar.cc/150?u=priyasharma',
+  avatar: 'avatarImg',
 };
 const instructorUser = {
   name: 'Rajesh Kumar',
   email: 'instructor@edutrack.com',
   role: 'Instructor',
   bio: 'Senior software engineer with 10+ years of experience in cloud architecture.',
-  avatar: 'https://i.pravatar.cc/150?u=rajeshkumar',
+  avatar: 'avatarImg',
 };
 const adminUser = {
   name: 'Anjali Singh',
   email: 'admin@edutrack.com',
   role: 'Admin',
   bio: 'Head of Engineering at EduTrack. Focused on building scalable learning platforms.',
-  avatar: 'https://i.pravatar.cc/150?u=anjalisingh',
+  avatar: 'avatarImg',
 };
 
 // The component function itself

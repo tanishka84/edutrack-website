@@ -1,0 +1,49 @@
+/* src/components/PlatformOverview/PlatformOverview.module.css */
+.overviewSection {
+  padding: 80px 0;
+  background-color: var(--color-surface);
+}
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+.icon {
+  display: inline-flex;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.cardText {
+  color: var(--color-text-secondary);
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

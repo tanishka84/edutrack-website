@@ -1,0 +1,115 @@
+/* src/components/FeaturesDemo/FeaturesDemo.module.css */
+.featuresSection {
+  padding: 80px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden; 
+}
+
+.wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  flex-shrink: 0; 
+}
+
+.slide img {
+  width: 100%;
+  display: block; /* Removes extra space below the image */
+  aspect-ratio: 16 / 9; /* Forces a consistent widescreen shape */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+  background-color: var(--color-border); /* Background for when image is loading */
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(17, 24, 39, 0.8) 0%, rgba(17, 24, 39, 0) 100%);
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.prev {
+  left: 1rem;
+}
+.next {
+  right: 1rem;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: white;
+}

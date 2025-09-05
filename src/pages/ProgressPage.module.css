@@ -1,0 +1,51 @@
+/* src/pages/ProgressPage.module.css */
+.page {
+  padding: 32px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.title {
+  margin: 0;
+}
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.tableContainer {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden; /* This makes the border-radius apply to the table corners */
+}
+.gradeTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.gradeTable th, .gradeTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+.gradeTable th {
+  background-color: var(--color-bg);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+.gradeTable tbody tr:last-child td {
+  border-bottom: none;
+}
+.gradeTable tbody tr:nth-child(even) {
+  background-color: var(--color-bg);
+}

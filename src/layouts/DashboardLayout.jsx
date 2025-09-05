@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
 
-// This component will wrap all our dashboard pages
+// This component will wrap all dashboard pages
 const DashboardLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -14,7 +14,6 @@ const DashboardLayout = () => {
       <div className="main-content">
         <Header onMenuClick={() => setSidebarOpen(!isSidebarOpen)} />
         <main>
-          {/* Outlet is a placeholder where the nested route component will be rendered */}
           <Outlet /> 
         </main>
       </div>

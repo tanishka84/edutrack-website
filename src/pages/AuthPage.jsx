@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext } from 'react';
 
 const AuthContext = createContext(null);
 
-// Add some initial mock activities to make the feed look populated
+// Some initial mock activities to make the feed look populated
 const initialMockActivities = [
     {
         id: 1,
@@ -33,13 +33,11 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
-  // --- NEW FUNCTION TO ADD AN ACTIVITY ---
+
   const logActivity = (activity) => {
     const newActivity = { ...activity, id: Date.now(), timestamp: new Date() };
-    // Add the new activity to the start of the list, and keep the list at a max of 10 items
     setActivities(prev => [newActivity, ...prev].slice(0, 10));
   };
-  // ------------------------------------
 
   const value = {
     user,

@@ -71,7 +71,6 @@ const SubmissionViewModal = ({ assignment, onClose }) => {
   );
 };
 
-// ... (The main AssignmentModal for editing remains the same)
 const AssignmentModal = ({ assignment, onSave, onClose }) => {
   const [formData, setFormData] = useState({
     title: '',

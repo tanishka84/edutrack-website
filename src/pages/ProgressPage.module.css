@@ -27,7 +27,7 @@
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  overflow: hidden; /* This makes the border-radius apply to the table corners */
+  overflow: hidden; 
 }
 .gradeTable {
   width: 100%;

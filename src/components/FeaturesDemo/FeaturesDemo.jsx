@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import styles from './FeaturesDemo.module.css';
 import { ChevronLeft, ChevronRight } from 'react-feather';
 
-// In a real app, you'd get these from a CMS or an asset import
 const slides = [
   {
     image: 'https://via.placeholder.com/900x500/1E40AF/FFFFFF?text=Dashboard',

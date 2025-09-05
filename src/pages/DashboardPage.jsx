@@ -75,7 +75,7 @@ const DashboardPage = () => {
             <p>No recent activity.</p>
           )}
         </div>
-        {/* --------------------------- */}
+        {}
 
       </div>
     </div>

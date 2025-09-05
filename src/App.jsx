@@ -33,7 +33,7 @@ function App() {
         <Route index element={<DashboardPage />} />
         <Route path="courses" element={<CoursesPage />} />
         <Route path="profile" element={<ProfilePage />} />
-        <Route path="assignments" element={<AssignmentsPage />} /> {/* <-- 2. ADD ROUTE */}
+        <Route path="assignments" element={<AssignmentsPage />} /> 
         <Route path="progress" element={<ProgressPage />} />
       </Route>
     </Routes>
